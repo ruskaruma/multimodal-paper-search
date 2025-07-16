@@ -205,3 +205,40 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# === Project-Specific: Multimodal Paper Search ===
+
+# Raw PDFs
+pdfs/
+*.pdf
+
+# Parsed text/data
+data/
+*.json
+*.txt
+
+# Saved embeddings
+*.npy
+*.npz
+
+# Model checkpoints
+*.pt
+*.bin
+*.ckpt
+*.onnx
+saved_models/
+
+# FAISS or vector indexes
+*.faiss
+*.index
+
+# Temporary images (figures/tables)
+*.jpg
+*.jpeg
+*.png
+
+# Search cache or debug dumps
+cache/
+tmp/
+logs/
+*.log
