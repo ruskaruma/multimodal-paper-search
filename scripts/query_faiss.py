@@ -9,6 +9,12 @@ from argparse import ArgumentParser
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning)  #Suppressing TypedStorage warning because my CLI look messy
 warnings.filterwarnings("ignore", category=FutureWarning)  #Suppress res
+warnings.filterwarnings("ignore", category=FutureWarning)
+
+#Suppressing known deprecation warnings
+warnings.filterwarnings("ignore", category=FutureWarning, module="huggingface_hub.file_download")
+warnings.filterwarnings("ignore", category=UserWarning, module="torch._utils")
+
 
 #Loading SciBERT (the text encoder)
 print("🔠 Loading SciBERT...")
